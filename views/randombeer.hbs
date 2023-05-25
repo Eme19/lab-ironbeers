@@ -1,0 +1,15 @@
+ 
+<section class="randombeer-flex-container">
+      {{responseFromAPI}} 
+        {{> beerpartial this}} 
+    
+<h4>Food Pairings</h4>
+  <ul>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+</ul>
+<p><strong>Brewers Tips:</strong>{{brewers_tips}}</p>
+</section>
+
+
